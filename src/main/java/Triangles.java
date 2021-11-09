@@ -1,17 +1,50 @@
 public class Triangles {
     public String getTriangle(int numberOfRows) {
-        return null;
+        String answer = "";
+        for (int a = 1; a < numberOfRows; a++) {
+            answer += "\n";
+
+            for (int b = 0; b < a + 1; b++) {
+
+                answer += "*";
+            }
+        }
+        return answer;
     }
 
     public String getRow(int numberOfStars) {
-        return null;
+        String answer = "";
+        for (int a = 0; a < numberOfStars; a++) {
+            answer += "*";
+        }
+        return answer;
     }
 
     public String getSmallTriangle() {
-        return null;
+        String answer = "";
+        for (int a = 0; a < 4; a++) {
+            answer += "\n";
+
+            for (int b = 0; b < a + 1; b++) {
+
+            answer += "*";
+        }
+    }
+        return answer;
     }
 
+
     public String getLargeTriangle() {
-        return null;
+
+        String answer = "";
+        for (int a = 0; a < 9; a++) {
+            answer += "\n";
+
+            for (int b = 0; b < a + 1; b++) {
+
+        answer += "*";
+            }
+        }
+        return answer;
     }
 }
