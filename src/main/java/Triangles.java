@@ -1,17 +1,44 @@
 public class Triangles {
     public String getTriangle(int numberOfRows) {
-        return null;
+        String answer = "";
+        for(int i =0; i<numberOfRows-1; i++){
+            for(int j = 0; j<i+1; j++){
+                answer+="*";
+            }
+            answer+="\n";
+        }
+        return answer;
     }
 
     public String getRow(int numberOfStars) {
-        return null;
+        String answer = "";
+        for(int i = 0; i < numberOfStars; i++){
+            answer+="*";
+        }
+        return answer;
     }
 
     public String getSmallTriangle() {
-        return null;
+        String answer = "";
+        for(int i =0; i<4; i++){
+
+            for(int j = 0; j<i+1; j++){
+                answer+="*";
+            }
+            answer+="\n";
+        }
+        return answer;
     }
 
     public String getLargeTriangle() {
-        return null;
+        String answer = "";
+        for(int i =0; i<9; i++){
+
+            for(int j = 0; j<i+1; j++){
+                answer+="*";
+            }
+            answer+="\n";
+        }
+        return answer;
     }
 }
