@@ -32,6 +32,7 @@ public class TrianglesTest {
                         "*******\n" +
                         "********\n" +
                         "*********\n";
+
         String actual = triangles.getTriangle(10);
         Assertions.assertEquals(expected, actual);
     }
@@ -67,7 +68,7 @@ public class TrianglesTest {
     @Test
     public void testGetSmallTriangle() {
         String expected =
-                "*\n" +
+                         "*\n" +
                         "**\n" +
                         "***\n" +
                         "****\n";
