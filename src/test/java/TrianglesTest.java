@@ -22,7 +22,7 @@ public class TrianglesTest {
 
     @Test
     public void getTriangleTest1() {
-        String expected =
+        String  expected =
                 "*\n" +
                         "**\n" +
                         "***\n" +
