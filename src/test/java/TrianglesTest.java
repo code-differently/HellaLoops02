@@ -12,15 +12,6 @@ public class TrianglesTest {
     }
 
     @Test
-    public void getRow() {
-        String expected = "********************";
-        int width = 20;
-        String actual = triangles.getRow(width);
-        Assertions.assertEquals(expected, actual);
-    }
-
-
-    @Test
     public void getTriangleTest1() {
         String expected =
                 "*\n" +
@@ -47,6 +38,28 @@ public class TrianglesTest {
         Assertions.assertEquals(expected, actual);
     }
 
+
+    @Test
+    public void getRow() {
+        String expected = "********************";
+        int width = 20;
+        String actual = triangles.getRow(width);
+        Assertions.assertEquals(expected, actual);
+    }
+
+
+
+    @Test
+    public void testGetSmallTriangle() {
+        String expected =
+                "*\n" +
+                        "**\n" +
+                        "***\n" +
+                        "****\n";
+        String actual = triangles.getSmallTriangle();
+        Assertions.assertEquals(expected, actual);
+    }
+
     @Test
     public void testGetLargeTriangle() {
         String expected =
@@ -64,14 +77,4 @@ public class TrianglesTest {
     }
 
 
-    @Test
-    public void testGetSmallTriangle() {
-        String expected =
-                "*\n" +
-                        "**\n" +
-                        "***\n" +
-                        "****\n";
-        String actual = triangles.getSmallTriangle();
-        Assertions.assertEquals(expected, actual);
-    }
 }
