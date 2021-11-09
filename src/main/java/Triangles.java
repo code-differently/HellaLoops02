@@ -1,17 +1,47 @@
 public class Triangles {
     public String getTriangle(int numberOfRows) {
-        return null;
+        StringBuilder triangle = new StringBuilder();
+        for (int i = 1; i < numberOfRows; i++) {
+            for (int j = 0; j < i; j++) {
+                triangle.append("*");
+            }
+            triangle.append(System.lineSeparator());
+        }
+        return triangle.toString();
     }
 
     public String getRow(int numberOfStars) {
-        return null;
+        StringBuilder row = new StringBuilder();
+        for (int i = 0; i < numberOfStars; i++) {
+            row.append("*");
+
+        }
+        return row.toString();
     }
 
     public String getSmallTriangle() {
-        return null;
+        StringBuilder smallTriangle = new StringBuilder();
+        for (int i = 1; i < 5; i++) {
+            for (int j = 0; j < i; j++) {
+                smallTriangle.append("*");
+            }
+            smallTriangle.append(System.lineSeparator());
+        }
+        return smallTriangle.toString();
     }
 
+
+
     public String getLargeTriangle() {
-        return null;
+        StringBuilder largeTriangle = new StringBuilder();
+        for (int i = 1; i < 10; i++) {
+            for (int j = 0; j < i; j++) {
+                largeTriangle.append("*");
+            }
+            largeTriangle.append(System.lineSeparator());
+        }
+        return largeTriangle.toString();
     }
 }
+
+
